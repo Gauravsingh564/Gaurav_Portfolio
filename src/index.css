@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-neu-white font-sans;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .neu-button {
+    @apply bg-neu-black text-neu-white border-4 border-neu-black font-mono font-bold py-3 px-6 shadow-neu hover:shadow-neu-sm transition-all duration-200 hover:translate-x-1 hover:translate-y-1 uppercase tracking-wider;
+  }
+  
+  .neu-button-outline {
+    @apply bg-neu-white text-neu-black border-4 border-neu-black font-mono font-bold py-3 px-6 shadow-neu hover:shadow-neu-sm transition-all duration-200 hover:translate-x-1 hover:translate-y-1 uppercase tracking-wider;
+  }
+  
+  .neu-card {
+    @apply bg-neu-white border-4 border-neu-black shadow-neu p-6;
+  }
+  
+  .neu-input {
+    @apply border-4 border-neu-black p-4 bg-neu-white focus:outline-none focus:shadow-neu-sm font-mono;
+  }
+  
+  .neu-section {
+    @apply py-16 md:py-24;
+  }
+}
